@@ -309,6 +309,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("""
     <div style='text-align: center; margin-top: 2rem; color: rgba(255, 255, 255, 0.5); font-size: 0.9rem;'>
+        <p>✨ Powered by AI</p>
         <p style='font-size: 0.8rem; margin-top: 0.5rem;'>Explore the world's most beautiful destinations</p>
     </div>
     """, unsafe_allow_html=True)
@@ -333,9 +334,9 @@ if country:
                 </p>
             </div>
             <div style='display: flex; align-items: center; margin-bottom: 1.5rem;'>
-                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, transparent, rgba(178, 145, 103));'></div>
-                <h3 style='margin: 0 1.5rem; white-space: nowrap;'> Famous Places To Visit</h3>
-                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, rgba(178, 145, 103), transparent);'></div>
+                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, transparent, rgba(255,23,68,0.5));'></div>
+                <h3 style='margin: 0 1.5rem; white-space: nowrap;'>🌟 Famous Places To Visit</h3>
+                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, rgba(255,23,68,0.5), transparent);'></div>
             </div>
             <div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;'>
                 {places_html}
