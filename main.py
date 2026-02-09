@@ -22,8 +22,8 @@ st.markdown("""
     
     /* Main Background */
     .stApp {
-        background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 50%, #0f1419 100%);
-        color: #e8e8e8;
+        background: linear-gradient(135deg, #F5FBE6 0%, #F5FBE6 50%);
+        color: #F5FBE6;
     }
     
     /* Hide Streamlit Branding */
@@ -36,7 +36,7 @@ st.markdown("""
         font-family: 'Playfair Display', serif !important;
         font-size: 4.5rem !important;
         font-weight: 800 !important;
-        background: linear-gradient(135deg, #d4af7e 0%, #e8d5b0 50%, #d4af7e 100%);
+        background: linear-gradient(135deg, #233D4D);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -51,7 +51,7 @@ st.markdown("""
     .subtitle {
         text-align: center;
         font-size: 1.2rem;
-        color: #b8956a;
+        color: #215E61;
         font-weight: 300;
         margin-bottom: 3rem;
         letter-spacing: 0.1em;
@@ -61,8 +61,8 @@ st.markdown("""
     
     /* Sidebar Styling */
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #151b27 0%, #0f1419 100%);
-        border-right: 2px solid rgba(212, 175, 126, 0.15);
+        background: linear-gradient(180deg, #F5FBE6 50%, #F5FBE6 100%);
+        border-right: 7px solid #B8956A;
         padding: 2rem 1rem;
     }
     
@@ -73,7 +73,7 @@ st.markdown("""
     /* Sidebar Title */
     [data-testid="stSidebar"] h1 {
         font-size: 1.8rem !important;
-        color: #d4af7e;
+        color: 2#33D4D;
         text-align: left;
         margin-bottom: 2rem;
     }
@@ -82,14 +82,14 @@ st.markdown("""
     .stSelectbox label {
         font-size: 1rem !important;
         font-weight: 600 !important;
-        color: #e8e8e8 !important;
+        color:#215E61 !important;
         text-transform: uppercase;
         letter-spacing: 0.05em;
         margin-bottom: 0.5rem;
     }
     
     .stSelectbox > div > div {
-        background: rgba(212, 175, 126, 0.08);
+        background: #215E61;
         border: 2px solid rgba(212, 175, 126, 0.25);
         border-radius: 12px;
         color: #e8e8e8;
@@ -99,7 +99,7 @@ st.markdown("""
     
     .stSelectbox > div > div:hover {
         border-color: #d4af7e;
-        background: rgba(212, 175, 126, 0.12);
+        background: #215E61;
         box-shadow: 0 0 20px rgba(212, 175, 126, 0.15);
         transform: translateY(-2px);
     }
@@ -109,7 +109,7 @@ st.markdown("""
         font-family: 'Playfair Display', serif !important;
         font-size: 3rem !important;
         font-weight: 700 !important;
-        color: #e8e8e8 !important;
+        color: #215E61!important;
         margin-top: 2rem !important;
         margin-bottom: 1.5rem !important;
         text-align: center;
@@ -134,7 +134,7 @@ st.markdown("""
     h3 {
         font-size: 1.5rem !important;
         font-weight: 600 !important;
-        color: #b8956a !important;
+        color: #233D4D;
         margin-top: 2rem !important;
         margin-bottom: 1rem !important;
         text-transform: uppercase;
@@ -150,12 +150,12 @@ st.markdown("""
     
     /* Places Card Container */
     .places-container {
-        background: linear-gradient(135deg, rgba(212, 175, 126, 0.05) 0%, rgba(21, 27, 39, 0.6) 100%);
+        background: linear-gradient(135deg, #215E61 0%, rgba(21, 27, 39, 0.6) 100%);
         border: 2px solid rgba(212, 175, 126, 0.15);
         border-radius: 20px;
         padding: 2.5rem;
         margin-top: 2rem;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(50px);
         box-shadow: 0 8px 32px rgba(212, 175, 126, 0.08);
         animation: fadeInUp 0.8s ease-out;
     }
@@ -299,7 +299,7 @@ st.markdown("<p class='subtitle'>Discover Your Next Adventure</p>", unsafe_allow
 
 # Sidebar
 with st.sidebar:
-    st.markdown("### 🌍 Select Destination")
+    st.markdown("### Select Destination")
     country = st.selectbox(
         "Choose A Country",
         ["India", "USA", "China", "Brazil", "Canada", "Italy", "Mexico"],
@@ -308,8 +308,7 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("""
-    <div style='text-align: center; margin-top: 2rem; color: rgba(255, 255, 255, 0.5); font-size: 0.9rem;'>
-        <p>✨ Powered by AI</p>
+    <div style='text-align: center; margin-top: 2rem; color:#233D4D; font-size: 0.9rem;'>
         <p style='font-size: 0.8rem; margin-top: 0.5rem;'>Explore the world's most beautiful destinations</p>
     </div>
     """, unsafe_allow_html=True)
@@ -335,7 +334,7 @@ if country:
             </div>
             <div style='display: flex; align-items: center; margin-bottom: 1.5rem;'>
                 <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, transparent, rgba(178, 145, 103));'></div>
-                <h3 style='margin: 0 1.5rem; white-space: nowrap;'>🌟 Famous Places To Visit</h3>
+                <h3 style='margin: 0 1.5rem; white-space: nowrap; color:#ffffff;'> Famous Places To Visit</h3>
                 <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, rgba(178, 145, 103), transparent);'></div>
             </div>
             <div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;'>
@@ -348,8 +347,9 @@ if country:
 else:
     st.markdown("""
     <div style='text-align: center; padding: 4rem 2rem; color: rgba(255, 255, 255, 0.6);'>
-        <h3 style='color: #ff6090;'>👈 Select a country from the sidebar to begin your journey</h3>
+        <h3 style='color: #233D4D;'>👈 Select a country from the sidebar to begin your journey</h3>
         <p style='margin-top: 1rem; font-size: 1.1rem;'>Discover amazing destinations around the world</p>
     </div>
     """, unsafe_allow_html=True)
+
 
