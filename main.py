@@ -334,9 +334,9 @@ if country:
                 </p>
             </div>
             <div style='display: flex; align-items: center; margin-bottom: 1.5rem;'>
-                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, transparent, rgba(255,23,68,0.5));'></div>
+                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, transparent, rgba(178, 145, 103));'></div>
                 <h3 style='margin: 0 1.5rem; white-space: nowrap;'>🌟 Famous Places To Visit</h3>
-                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, rgba(255,23,68,0.5), transparent);'></div>
+                <div style='height: 1px; flex-grow: 1; background: linear-gradient(90deg, rgba(178, 145, 103), transparent);'></div>
             </div>
             <div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;'>
                 {places_html}
@@ -352,3 +352,4 @@ else:
         <p style='margin-top: 1rem; font-size: 1.1rem;'>Discover amazing destinations around the world</p>
     </div>
     """, unsafe_allow_html=True)
+
